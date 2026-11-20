@@ -1,0 +1,18 @@
+name: Coral ColorOS17 vendor compatibility tests
+
+on:
+  push:
+    branches: [dev/coloros17-firstboot]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guarded-patches:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test property context collision handling
+        run: python3 -m unittest discover -s tests -v
