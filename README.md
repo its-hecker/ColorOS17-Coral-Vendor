@@ -1,5 +1,7 @@
-# ColorOS 17 coral vendor adaptation
+# ColorOS 17 / coral vendor adapter
 
-Maintainer: **Hecker**. Experimental **vendor compatibility and audit layer** for Pixel 4 XL's existing proprietary hardware blobs. The original vendor source remains external and unmodified.
+Maintainer: **Hecker**. The Pixel 4 XL's vendor blobs remain sourced from our pinned HeckerOS/PixelOS coral vendor tree. This repository contains **read-only compatibility audits** and will hold narrowly scoped ColorOS changes once the donor system has been inspected.
 
-The first development branch will verify Pixel camera, Face ID, Citadel and Soli prerequisites before any changes to a donor image. No proprietary firmware is hosted here. Do not flash.
+No binary blobs, radio partitions, proprietary firmware or flashable images are included here. Do not substitute OPPO/OnePlus vendor partitions: the camera, FaceAuth, Soli, Citadel and modem stacks are Pixel-specific.
+
+Run `python3 tools/audit_vendor.py /path/to/heckeros-coral-vendor` on the source checkout. Results are evidence of source presence, **not** proof that ColorOS can load the HALs.

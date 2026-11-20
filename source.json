@@ -1,0 +1,7 @@
+{
+  "target": "coral",
+  "upstream": "https://github.com/its-hecker/heckeros-coral-vendor",
+  "branch": "cnb_latest_stable",
+  "commit": "e5dbd92c40314ec1c17eab7887c7c13a5e87fa0c",
+  "notice": "Original Google/Qualcomm blobs remain proprietary. Do not redistribute donor images here."
+}
