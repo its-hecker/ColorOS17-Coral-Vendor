@@ -9,7 +9,7 @@ REQUIRED = {
     "camera_hal": "proprietary/vendor/lib64/hw/camera.msmnile.so",
     "face_keymaster": "proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service.citadel",
     "face_airbrush": "proprietary/vendor/bin/hw/vendor.google.airbrush@1.0-service",
-    "face_calibration": "proprietary/vendor/lib64/libautocalsolvers.so",
+    "face_airbrush_lib": "proprietary/vendor/lib64/libairbrush-pixel.so",
     "soli_oslo_firmware": "proprietary/vendor/firmware/OsloSensorPackage.bin",
     "soli_config_firmware": "proprietary/vendor/firmware/OsloSensorConfig.bin",
     "chre_firmware": "proprietary/vendor/firmware/BufferConfigValCHRE.bin",
